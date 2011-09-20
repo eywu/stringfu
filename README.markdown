@@ -44,5 +44,5 @@ ngrams will generate ngrams for any string and returns an array of numbers corre
 
 stemming a string will output an array of the Porter Stemmed words
 
-    "ZOMG! I hearted installing headlights into used decipticons".stem
-    # => ["zomg", "i", "heart", "instal", "headlight", "into", "use", "decipticon"]
+    "ZOMG! I hearted installing headlights into used decepticons".stem
+    # => ["zomg", "i", "heart", "instal", "headlight", "into", "use", "decepticon"]
