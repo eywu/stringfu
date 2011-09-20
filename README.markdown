@@ -55,3 +55,13 @@ stemming a string will output an array of the Porter Stemmed words
 
     "ZOMG! I hearted installing headlights into used decepticons".stem
     # => ["zomg", "i", "heart", "instal", "headlight", "into", "use", "decepticon"]
+    
+## Todo
+
+* ngrams
+ * add option to make punctation it's own -gram
+ * add option to -gramify individual words into characters / syllables
+ * add parts of speech (POS) integration to drop types (noun, adj, verbs) from ngrams
+* stemming
+ * add pluralize and singularize methods
+ * add parts of speech (POS) integration so you can pluarlize and singularize just nouns (NN, NNS, NNP)
