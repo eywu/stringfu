@@ -1,8 +1,8 @@
-# StringFu
+# stringfu
 
-StringFu are some simple methods to manipulate strings in order for them to be cleaned up for Natural Language Processing (NLP).
+stringfu is a ruby gem with some simple methods to manipulate strings in order for them to be cleaned up for Natural Language Processing (NLP).
 
-## Install StringFu
+## Install stringfu
 
     gem install stringfu
 
