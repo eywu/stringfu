@@ -30,14 +30,14 @@ module StringFu
   end
 
   def ngrams *args
-    # Wordify::HTML.ngrams 1  
     wordphrase = self.split
 
     if args.size == 0 
       args = [1..wordphrase.length]
     end
-
-    args = args.map { |arg| Array(arg) }.flatten.uniq.sort # Inspired by http://www.rubyquiz.com/quiz4.html
+  
+    # Inspired by http://www.rubyquiz.com/quiz4.html
+    args = args.map { |arg| Array(arg) }.flatten.uniq.sort
     args = args.select { |arg| arg <= wordphrase.length and arg > 0 }  
 
     args.each do |num| 
@@ -47,7 +47,8 @@ module StringFu
       rounds.times do |iter| 
         self.instance_variable_get("@#{prefix}grams") << wordphrase[iter...(iter+num)].join(" ")
       end
-      self.class.__send__(:attr_accessor, "#{prefix}grams".to_sym)    # Calls :attr_accessor to add new instance variable
+      # Calls :attr_accessor to add new instance variable
+      self.class.__send__(:attr_accessor, "#{prefix}grams".to_sym)
       self.instance_variable_get("@#{prefix}grams")
     end
     args
