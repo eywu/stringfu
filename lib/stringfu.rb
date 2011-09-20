@@ -45,6 +45,7 @@ module Stringfu
     args.each do |num| 
       prefix = latinfy num
       self.instance_variable_set "@#{prefix}grams", []
+
       rounds = wordphrase.length - num + 1
       rounds.times do |iter| 
         self.instance_variable_get("@#{prefix}grams") << wordphrase[iter...(iter+num)].join(" ")
@@ -52,6 +53,9 @@ module Stringfu
       # Calls :attr_accessor to add new instance variable
       self.class.__send__(:attr_accessor, "#{prefix}grams".to_sym)
       self.instance_variable_get("@#{prefix}grams")
+
+      self.class.__send__(:alias_method, "_#{num}grams", "#{prefix}grams") if num <= 3
+      self.class.__send__(:alias_method, "_#{num}grams=", "#{prefix}grams=") if num <= 3
     end
     args
   end
