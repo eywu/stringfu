@@ -38,8 +38,7 @@ module Stringfu
     end
 
     args = args.map { |arg| Array(arg) }.flatten.uniq.sort # Inspired by http://www.rubyquiz.com/quiz4.html
-
-    p args
+    args = args.select { |arg| arg <= wordphrase.length and arg > 0 }  
 
     args.each do |num| 
       prefix = latinfy num
@@ -51,7 +50,7 @@ module Stringfu
       self.class.__send__(:attr_accessor, "#{prefix}grams".to_sym)    # Calls :attr_accessor to add new instance variable
       self.instance_variable_get("@#{prefix}grams")
     end
-    wordphrase.length
+    args
   end
 
   private
