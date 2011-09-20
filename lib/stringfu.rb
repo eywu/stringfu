@@ -1,10 +1,10 @@
 require "stringfu/version"
 
 class String
-  include Stringfu
+  include StringFu
 end
 
-module Stringfu
+module StringFu
   def punc_strip
     self.gsub(/[!@#\$%^&*;:,<.>?\/|+=\[\]"{}()_-]/,'').gsub(/^'/,'')
   end
