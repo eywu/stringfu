@@ -27,13 +27,16 @@ ngrams will generate ngrams (unigrams, bigrams, trigrams, four-grams, etc.) for 
     ftw = "I choose Whoppie Goldberg for the Win!"
     ftw.ngrams  # => [1, 2, 3, 4, 5, 6, 7]
     
-    ftw.unigrams  
+    ftw.unigrams
+    ftw._1grams
     # => ["I", "choose", "Whoppie", "Goldberg", "for", "the", "Win!"]
     
-    ftw.bigrams   
+    ftw.bigrams
+    ftw._2grams
     # => ["I choose", "choose Whoppie", "Whoppie Goldberg", "Goldberg for", "for the", "the Win!"]
     
-    ftw.trigrams  
+    ftw.trigrams
+    ftw._3grams
     # => ["I choose Whoppie", "choose Whoppie Goldberg", "Whoppie Goldberg for", "Goldberg for the", "for the Win!"]
     
     ftw._4grams   
