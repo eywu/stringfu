@@ -49,7 +49,7 @@ ngrams will generate ngrams (unigrams, bigrams, trigrams, four-grams, etc.) for 
     # => ["I choose Whoppie Goldberg", "choose Whoppie Goldberg for", "Whoppie Goldberg for the", "Goldberg for the Win!"]
 
     ftw.ngrams 3..6   # => [3, 4, 5, 6]
-    ftw.ngrams 2, 7, 3..4   # => [2, 3, 4, 7]
+    ftw.ngrams 2, 7, 2..4   # => [2, 3, 4, 7]
 
 stemming a string will output an array of the Porter Stemmed words
 
