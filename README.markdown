@@ -6,6 +6,12 @@ stringfu is a ruby gem with some simple methods to manipulate strings in order f
 
     gem install stringfu
 
+### Dependencies
+
+UEA Stemmer for Porter Stemming: https://github.com/ealdent/uea-stemmer
+
+    gem install uea-stemmer
+
 ## Usage
 
     wtf = 'Charlie the Unicorn is a potty mouth. He\'ll say things like, @!@#% !@$%$[@#$^!)'
