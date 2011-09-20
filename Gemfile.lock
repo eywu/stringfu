@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    stringfu (0.0.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    uea-stemmer (0.10.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  stringfu!
+  uea-stemmer
