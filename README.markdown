@@ -4,7 +4,7 @@ StringFu are some simple methods to manipulate strings in order for them to be c
 
 ## Install StringFu
 
-  gem install stringfu
+    gem install stringfu
 
 ## Usage
 
