@@ -41,7 +41,7 @@ module Stringfu
     if args.size == 0 
       args = [1..wordphrase.length]
     end
-  
+
     # Inspired by http://www.rubyquiz.com/quiz4.html
     args = args.map { |arg| Array(arg) }.flatten.uniq.sort
     args = args.select { |arg| arg <= wordphrase.length and arg > 0 }  
@@ -61,7 +61,7 @@ module Stringfu
       self.class.__send__(:alias_method, "_#{num}grams", "#{prefix}grams") if num <= 3
       self.class.__send__(:alias_method, "_#{num}grams=", "#{prefix}grams=") if num <= 3
     end
-    args
+    args.size
   end
 
   def stem
