@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["me@eywu.com"]
   s.homepage    = "http://stringfu.com"
   s.summary     = %q{Manipulating words like a grandmasta}
-  s.description = %q{Extending String with methods to stem, count, and clean words}
+  s.description = %q{Extending the String Class with methods to stem, count, and clean words}
 
   s.rubyforge_project = "stringfu"
 
