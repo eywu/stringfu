@@ -28,10 +28,10 @@ punc_gsub can also take arguments
 
     wtf.punc_gsub "?"   # => "Charlie the Unicorn is a potty mouth? He'll say things like? ????? ????????????"
 
-ngrams will generate ngrams (unigrams, bigrams, trigrams, four-grams, etc.) for any string and returns an array of numbers corresponding to the ngrams
+ngrams will generate ngrams (unigrams, bigrams, trigrams, four-grams, etc.) for any string and returns the max number of ngrams.
 
     ftw = "I choose Whoppie Goldberg for the Win!"
-    ftw.ngrams  # => [1, 2, 3, 4, 5, 6, 7]
+    ftw.ngrams  # => 7
     
     ftw.unigrams
     ftw._1grams
