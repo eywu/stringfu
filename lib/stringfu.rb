@@ -61,7 +61,7 @@ module Stringfu
       self.class.__send__(:alias_method, "_#{num}grams", "#{prefix}grams") if num <= 3
       self.class.__send__(:alias_method, "_#{num}grams=", "#{prefix}grams=") if num <= 3
     end
-    args.size
+    args
   end
 
   def stem

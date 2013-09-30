@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    stringfu (0.0.6)
+    stringfu (0.0.7)
 
 GEM
   remote: http://rubygems.org/
